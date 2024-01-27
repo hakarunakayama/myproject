@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ..crud import views
+from .crud.views.signin_view import SigninView
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.TopView.as_view(), name="top"),
+    path('', SigninView.as_view(), name="top"),
 ] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
