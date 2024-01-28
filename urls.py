@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .crud.views.signin_view import SigninView
+from .crud.views.newaccount_view import NewaccountView
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('signin', SigninView.as_view(), name="signin"),
+    path('signin/', SigninView.as_view(), name="signin"),
+    path('newaccount/', NewaccountView.as_view(), name="newaccount")
 ] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
