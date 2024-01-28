@@ -121,7 +121,7 @@ STATIC_URL = '/static/'
 
 # 2024/1/26:ChatGPTの指示に従い以下を追記
 STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, "static"),
+        os.path.join(BASE_DIR, "myproject/crud/static"),
 ]
 
 # Default primary key field type
