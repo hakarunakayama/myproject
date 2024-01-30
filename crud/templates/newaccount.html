@@ -7,17 +7,20 @@
         <form>
             <table class="signin-input">
                 <tr>
-                    <td>User name</td>
-                    <td><input type="text" id=textbox></td>
+                    <td>email</td>
+                    <td><input type="text" id="textbox"></td>
                 </tr>
                 <tr>
                     <td>Password</td>
-                    <td><input type="text" id=textbox></td>
+                    <td><input type="text" id="textbox"></td>
+                </tr>
+                <tr>
+                    <td class="again">Password again</td>
+                    <td class="again"><input type="text" id="textbox"></td>
                 </tr>
             </table>
-            <button>Signin</button>
+            <button>Create</button>
         </form>
-        <button>Signup</button>
-        <a href="">Forgot Password?</a>
+        <a href="{% url 'signin' %}">Back</a>
     </main>
 {% endblock %}

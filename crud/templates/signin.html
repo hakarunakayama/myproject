@@ -7,19 +7,19 @@
         <form>
             <table class="signin-input">
                 <tr>
-                    <td>User name</td>
-                    <td><input type="text" id=textbox></td>
+                    <td>email</td>
+                    <td><input type="text" id="textbox"></td>
                 </tr>
                 <tr>
                     <td>Password</td>
-                    <td><input type="text" id=textbox></td>
+                    <td><input type="text" id="textbox"></td>
                 </tr>
             </table>
             <button>Signin</button>
         </form>
         <a href="">Forgot Password?</a>
         <br>
-        <a href="./newaccount.html">New Account</a>
+        <a href="{% url 'newaccount' %}">New Account</a>
 
     </main>
 {% endblock %}
