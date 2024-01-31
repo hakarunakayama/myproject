@@ -25,7 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('signin/', SigninView.as_view(), name="signin"),
     path('newaccount/', NewaccountView.as_view(), name="newaccount"),
-    path('newcounselor/', NewcounselorView.as_view(), name="newcounselor")
+    path('newcounselor/', NewcounselorView.as_view(), name="newcounselor"),
 ] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
 
 if settings.DEBUG:
