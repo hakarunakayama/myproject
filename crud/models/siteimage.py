@@ -1,8 +1,8 @@
 from django.db import models
 
-class SiteImage(models.Model):
+class Siteimage(models.Model):
     title = models.CharField(max_length=255, null=True, blank=True)
-    image = models.ImageField(upload_to='media/images/')
+    # image = models.ImageField(upload_to='media/images/')
 
     class Meta:
         app_label = 'crud'
