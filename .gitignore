@@ -30,3 +30,6 @@ $RECYCLE.BIN/
 # Windows Installer files
 *.swp
 *~
+
+# ** **で囲むと、そこ以下のファイル全部が無視される
+**/__pycache__/**
